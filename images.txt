@@ -5,3 +5,5 @@ k8s.gcr.io/kube-proxy:v1.22.8
 k8s.gcr.io/pause:3.5
 k8s.gcr.io/etcd:3.5.0
 k8s.gcr.io/coredns/coredns:v1.8.0
+k8s.gcr.io/dns/k8s-dns-node-cache:1.21.1
+k8s.gcr.io/coredns/coredns:v1.8.0
