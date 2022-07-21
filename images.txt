@@ -9,3 +9,4 @@ k8s.gcr.io/dns/k8s-dns-node-cache:1.21.1
 k8s.gcr.io/coredns/coredns:v1.8.0
 k8s.gcr.io/sig-storage/local-volume-provisioner:v2.4.0
 k8s.gcr.io/ingress-nginx/controller:v1.0.4
+k8s.gcr.io/metrics-server/metrics-server:v0.5.0
