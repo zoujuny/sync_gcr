@@ -1,2 +1,4 @@
-gcr.io/ml-pipeline/visualization-server:1.8.2
-gcr.io/ml-pipeline/metadata-envoy:1.8.2
+gcr.io/ml-pipeline/visualization-server:2.0.0-alpha.3
+gcr.io/ml-pipeline/metadata-envoy:2.0.0-alpha.3
+gcr.io/ml-pipeline/workflow-controller:v3.3.8-license-compliance
+gcr.io/tfx-oss-public/ml_metadata_store_server:1.5.0
