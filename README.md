@@ -1,5 +1,8 @@
 # sync_gcr
 
+## 建议使用 https://github.com/DaoCloud/public-image-mirror
+此仓库方式有点麻烦
+
 ### 作用
 
 同步k8s集群所需镜像
@@ -17,3 +20,5 @@ uniq
 #### 提交即可触发github action 同步images.txt的镜像到我的dockerhub, 你也可以更改为自己的dockerhub
 #### ci run完通过 python3 load_image.py 把镜像下载到本地,并重新tag
 #### Todo 改写为多进程
+
+
