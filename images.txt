@@ -27,4 +27,3 @@ gcr.io/ml-pipeline/visualization-server
 gcr.io/ml-pipeline/workflow-controller:v3.3.8-license-compliance
 gcr.io/tfx-oss-public/ml_metadata_store_server:1.5.0
 
-
