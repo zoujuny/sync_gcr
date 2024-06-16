@@ -16,6 +16,7 @@ def get_filename():
 
 def pull_image():
     name_list= get_filename()
+    print("name_list:", name_list)
     for name in name_list:
         new_name = "registry.cn-hangzhou.aliyuncs.com/hexai/nvidia-cuda:" + name.split(":")[-1]
         cmd = "docker tag {0}   {1}".format(name, new_name)
