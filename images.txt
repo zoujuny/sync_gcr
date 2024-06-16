@@ -1,2 +1,6 @@
-nginx:1.18.0|nginx
-nginx:1.27.0|nginx
+nvcr.io/nvidia/cuda:10.0-cudnn7-runtime-centos7|nvidia-cuda
+nvcr.io/nvidia/cuda:10.0-cudnn7-devel-centos7|nvidia-cuda
+
+nnvcr.io/nvidia/cuda:10.0-devel-centos7|nvidia-cuda
+nvcr.io/nvidia/cuda:10.0-runtime-centos7|nvidia-cuda
+nvcr.io/nvidia/cuda:10.0-base-centos7|nvidia-cuda
