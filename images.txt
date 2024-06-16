@@ -1,2 +1,2 @@
-pytorch/pytorch:1.10.0-cuda11.3-cudnn8-runtime|pytorch
-paddlepaddle/paddle:2.3.2-gpu-cuda11.2-cudnn8|paddle
+nginx:1.18.0|nginx
+nginx:1.27.0|nginx
