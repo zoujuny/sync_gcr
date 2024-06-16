@@ -1,2 +1,2 @@
-tensorflow/tensorflow:1.14.0-gpu-py3|tensorflow
-tensorflow/tensorflow:2.5.1-gpu|tensorflow
+pytorch/pytorch:1.10.0-cuda11.3-cudnn8-runtime|pytorch
+paddlepaddle/paddle:2.3.2-gpu-cuda11.2-cudnn8|paddle
