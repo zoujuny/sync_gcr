@@ -18,13 +18,14 @@ def pull_image():
     name_list= get_filename()
     print("name_list:", name_list)
     for name in name_list:
-        new_name = "registry.cn-hangzhou.aliyuncs.com/hexai/nvidia-cuda:" + name.split(":")[-1]
-        cmd = "docker tag {0}   {1}".format(name, new_name)
-        print(cmd)
-        subprocess.call("docker pull {}".format(name), shell=True)
-        subprocess.run(["docker", "tag", name, new_name])
-        subprocess.call("docker login -u zou.juny@gmail.com -p 2wjddls@ali registry.cn-hangzhou.aliyuncs.com", shell=True)
-        subprocess.call("docker push {}".format(new_name), shell=True)
+        if name:
+            new_name = "registry.cn-hangzhou.aliyuncs.com/hexai/nvidia-cuda:" + name.split(":")[-1]
+            cmd = "docker tag {0}   {1}".format(name, new_name)
+            print(cmd)
+            subprocess.call("docker pull {}".format(name), shell=True)
+            subprocess.run(["docker", "tag", name, new_name])
+            subprocess.call("docker login -u zou.juny@gmail.com -p 2wjddls@ali registry.cn-hangzhou.aliyuncs.com", shell=True)
+            subprocess.call("docker push {}".format(new_name), shell=True)
         
 if __name__ == "__main__":
     pull_image()
