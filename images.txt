@@ -1,6 +1,4 @@
-nvcr.io/nvidia/cuda:10.0-cudnn7-runtime-centos7|nvidia-cuda
-nvcr.io/nvidia/cuda:10.0-cudnn7-devel-centos7|nvidia-cuda
-
-nnvcr.io/nvidia/cuda:10.0-devel-centos7|nvidia-cuda
-nvcr.io/nvidia/cuda:10.0-runtime-centos7|nvidia-cuda
-nvcr.io/nvidia/cuda:10.0-base-centos7|nvidia-cuda
+nvcr.io/nvidia/cuda:10.0-devel-centos7|nvidia-cuda
+nvcr.io/nvidia/cuda:11.2.2-devel-centos7|nvidia-cuda
+nvcr.io/nvidia/cuda:11.2.2-runtime-centos7|nvidia-cuda
+nvcr.io/nvidia/cuda:11.2.2-cudnn8-devel-centos7|nvidia-cuda
