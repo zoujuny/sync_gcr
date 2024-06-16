@@ -1,1 +1,1 @@
-nvidia/cuda:11.2.2-base-centos7
+tensorflow/tensorflow:1.14.0-gpu-py3|tensorflow
