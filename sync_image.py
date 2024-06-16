@@ -17,24 +17,13 @@ def get_filename():
 def pull_image():
     name_list= get_filename()
     for name in name_list:
-        if 'sha256' in name:
-            print(name)
-            sha256_name = name.split("@")
-            new_name = sha256_name[0].split("/")[-1]
-            tag = sha256_name[-1].split(":")[-1][0:6]
-            image = "zoujuny/" + new_name + ":"+ tag
-            cmd = "docker tag {0}   {1}".format(name, image)
-            subprocess.call("docker pull {}".format(name), shell=True)
-            subprocess.run(["docker", "tag", name, image])
-            subprocess.call("docker login -u zoujuny -p 2wjddls", shell=True)
-            subprocess.call("docker push {}".format(image), shell=True)
-        else:
-            new_name = "zoujuny/" + name.split("/")[-1]
-            cmd = "docker tag {0}   {1}".format(name, new_name)
-            subprocess.call("docker pull {}".format(name), shell=True)
-            subprocess.run(["docker", "tag", name, new_name])
-            subprocess.call("docker login -u zoujuny -p 2wjddls", shell=True)
-            subprocess.call("docker push {}".format(new_name), shell=True)
+        new_name = "registry.cn-hangzhou.aliyuncs.com/hexai/nvidia-cuda:" + name.split(":")[-1]
+        cmd = "docker tag {0}   {1}".format(name, new_name)
+        print(cmd)
+        subprocess.call("docker pull {}".format(name), shell=True)
+        subprocess.run(["docker", "tag", name, new_name])
+        subprocess.call("docker login -u zou.juny@gmail.com -p 2wjddls@ali registry.cn-hangzhou.aliyuncs.com", shell=True)
+        subprocess.call("docker push {}".format(new_name), shell=True)
         
 if __name__ == "__main__":
     pull_image()
