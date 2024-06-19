@@ -1,4 +1,4 @@
-nvcr.io/nvidia/cuda:10.0-devel-centos7|nvidia-cuda
-nvcr.io/nvidia/cuda:11.2.2-devel-centos7|nvidia-cuda
-nvcr.io/nvidia/cuda:11.2.2-runtime-centos7|nvidia-cuda
-nvcr.io/nvidia/cuda:11.2.2-cudnn8-devel-centos7|nvidia-cuda
+ubuntu:24.04|ubuntu
+ubuntu:22.04|ubuntu
+ubuntu:20.04|ubuntu
+ubuntu:18.04|ubuntu
