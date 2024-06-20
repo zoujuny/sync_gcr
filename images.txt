@@ -1,4 +1,4 @@
-ubuntu:24.04|ubuntu
-ubuntu:22.04|ubuntu
-ubuntu:20.04|ubuntu
-ubuntu:18.04|ubuntu
+centos:7.9.2009|centos
+centos:8.4.2105|centos
+centos:6.10|centos
+centos:7.6.1810|centos
