@@ -1,1 +1,1 @@
-tencentos/tencentos_server24:latest|tencentos
+tencentos/tencentos_server24:latest|tencentos_server24
